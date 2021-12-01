@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/news_navigation"
+    app:startDestination="@+id/nav_news">
+
+    <fragment
+        android:id="@+id/nav_weather"
+        android:name="com.pandorina.newsappwithnavigation.ui.WeatherFragment"
+        android:label="@string/weather"
+        tools:layout="@layout/fragment_weather" />
+
+    <fragment
+        android:id="@+id/nav_news"
+        android:name="com.pandorina.newsappwithnavigation.ui.NewsFragment"
+        android:label="@string/news"
+        tools:layout="@layout/fragment_news">
+
+        <action
+            android:id="@+id/action_nav_news_to_nav_detail"
+            app:destination="@id/nav_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_detail"
+        android:name="com.pandorina.newsappwithnavigation.ui.DetailFragment"
+        android:label="@string/detail"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="newsId"
+            app:argType="integer"/>
+
+        <deepLink
+            app:uri="www.pandorina.com/{newsId}"/>
+    </fragment>
+</navigation>

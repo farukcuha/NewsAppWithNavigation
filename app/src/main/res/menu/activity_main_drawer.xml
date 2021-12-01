@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_news"
+            android:title="@string/news" />
+        <item
+            android:id="@+id/nav_weather"
+            android:icon="@drawable/ic_weather"
+            android:title="@string/weather" />
+    </group>
+
+    <item android:title="@string/news_resources">
+        <menu>
+            <item
+                android:onClick="onClickNewsResourceItem"
+                android:id="@+id/menu_webtekno"
+                android:title="@string/webtekno" />
+            <item
+                android:onClick="onClickNewsResourceItem"
+                android:id="@+id/menu_mynet"
+                android:title="@string/mynet" />
+            <item
+                android:onClick="onClickNewsResourceItem"
+                android:id="@+id/menu_shiftdelete"
+                android:title="@string/shiftdelete" />
+            <item
+                android:onClick="onClickNewsResourceItem"
+                android:id="@+id/menu_webrazzi"
+                android:title="@string/webrazzi" />
+            <item
+                android:onClick="onClickNewsResourceItem"
+                android:id="@+id/menu_chip"
+                android:title="@string/chip" />
+            <item
+                android:onClick="onClickNewsResourceItem"
+                android:id="@+id/menu_donanim_haber"
+                android:title="@string/donanimhaber" />
+            <item
+                android:onClick="onClickNewsResourceItem"
+                android:id="@+id/menu_log"
+                android:title="@string/log" />
+        </menu>
+    </item>
+</menu>

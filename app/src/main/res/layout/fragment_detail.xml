@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="news"
+            type="com.pandorina.newsappwithnavigation.data.News" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".ui.DetailFragment">
+
+            <ImageView
+                loadImage="@{news.image}"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_holder_news" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@{news.publisher}"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="EURONEWS TURKCE - 1 saat önce" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="@{news.title}"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:text="Oyun Oynamak İçin Katil Olmayı Göze Almak... 19 Yaşında Bir Genç, PlayStation 5'ini Satmak İsterken Silahla Vuruldu" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@{news.article}"
+                android:textColor="@color/color_5"
+                android:textSize="18sp"
+                tools:text="Teksas'ta yaşayan 19 yaşındaki bir genç, sahip olduğu PlayStation 5'i ikinci elden satmaya çalışırken az kalsın hayatından oluyordu. Buluşma yerine silahla gelen alıcı, 19 yaşındaki genci vurduktan sonra PlayStation 5'i bırakıp kaçtı. Olayla ilgili soruşturma başlatıldı.
+Japonya merkezli teknoloji devi Sony'nin geçtiğimiz yıl piyasaya sürdüğü PlayStation 5, koronavirüs pandemisi nedeniyle hala tedarik sorunları yaşıyor. Pek çok oyun tutkunu, bu konsolu satın alma noktasına büyük zorluklar yaşıyor. Serbest piyasanın olduğu bölgelerdeki tüketicilerse konsol için görülmemiş paralar ödemek zorunda kalıyorlar. ABD'de ise tüm fiyat tekliflerini unutturacak bir olay yaşandı.
+
+ABD'nin Teksas eyaletinde yaşamını sürdürmekte olan 19 yaşındaki bir genç, PlayStation 5'ini satmak için ikinci el ürün platformlarından bir tanesinin yolunu tuttu. Gencin ilanını gören bir adamsa PlayStation 5'e talip olduğunu söyledi. İkili, mesajlaşmayı tamamladıktan sonra buluşmaya karar verdiler. İsmi açıklanmayan genç parasını alacağını düşünürken hiç beklemediği bir olay ile karşılaştı." />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

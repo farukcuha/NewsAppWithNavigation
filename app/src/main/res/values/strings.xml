@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">NewsAppWithNavigation</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="news">Haberler</string>
+    <string name="weather">Hava Durumu</string>
+    <string name="detail">Detay</string>
+    <string name="news_resources">Haber Kaynakları</string>
+    <string name="webtekno">Webtekno</string>
+    <string name="mynet">Mynet</string>
+    <string name="shiftdelete">Shiftdelete</string>
+    <string name="webrazzi">Webrazzi</string>
+    <string name="chip">Chip</string>
+    <string name="donanimhaber">Donanım Haber</string>
+    <string name="log">Log</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+
+
+</resources>
