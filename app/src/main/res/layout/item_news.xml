@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/selectableItemBackground">
 
     <data>
 
         <variable
             name="news"
-            type="com.pandorina.newsappwithnavigation.data.News" />
+            type="com.pandorina.newsappwithnavigation.data.model.News" />
     </data>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:background="?attr/selectableItemBackground"
-        android:clickable="true"
-        android:focusable="true"
         app:cardCornerRadius="5dp">
 
         <LinearLayout
@@ -26,11 +24,11 @@
 
             <ImageView
                 loadImage="@{news.image}"
+                android:id="@+id/ivListNewsImage"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
-                android:src="@drawable/image_holder_news"
-                tools:ignore="MissingConstraints"
-                android:adjustViewBounds="true"/>
+                android:scaleType="centerCrop"
+                tools:src="@drawable/image_holder_news" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -43,10 +41,13 @@
                 tools:text="HABERTURK" />
 
             <TextView
+                android:id="@+id/tvNewsTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:fontFamily="@font/font_barlow_bold"
                 android:text="@{news.title}"
+                android:transitionName="transition_detail"
                 android:textColor="@color/black"
                 android:textSize="17sp"
                 android:textStyle="bold"

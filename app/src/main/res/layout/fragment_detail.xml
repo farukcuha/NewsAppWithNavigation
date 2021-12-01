@@ -6,30 +6,33 @@
 
         <variable
             name="news"
-            type="com.pandorina.newsappwithnavigation.data.News" />
+            type="com.pandorina.newsappwithnavigation.data.model.News" />
     </data>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/white">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            tools:context=".ui.DetailFragment">
+            tools:context=".ui.fragment.DetailFragment">
 
             <ImageView
                 loadImage="@{news.image}"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/image_holder_news" />
+                android:transitionName="transition_image_detail"
+                tools:src="@drawable/image_holder_news" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:transitionName="transition_title"
                 android:text="@{news.publisher}"
                 android:textSize="12sp"
                 android:textStyle="bold"
@@ -40,6 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:text="@{news.title}"
+                android:transitionName="transition_detail"
                 android:textColor="@color/black"
                 android:textSize="24sp"
                 android:textStyle="bold"

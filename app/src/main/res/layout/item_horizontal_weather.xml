@@ -5,7 +5,7 @@
     <data>
         <variable
             name="hourlyWeather"
-            type="com.pandorina.newsappwithnavigation.data.HourlyWeather" />
+            type="com.pandorina.newsappwithnavigation.data.model.HourlyWeather" />
     </data>
 
     <androidx.cardview.widget.CardView
@@ -25,6 +25,7 @@
                 tools:text="06:00"
                 android:text="@{hourlyWeather.time}"
                 android:textSize="12sp"
+                android:fontFamily="@font/font_barlow_medium"
                 android:textColor="@color/black" />
 
             <ImageView
@@ -38,6 +39,7 @@
                 android:layout_marginTop="12dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/font_barlow_bold"
                 tools:text="14°"
                 android:text="@{hourlyWeather.degree}"
                 android:textSize="20sp"

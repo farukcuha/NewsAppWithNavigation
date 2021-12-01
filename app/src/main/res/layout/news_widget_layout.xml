@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:text="@string/most_popular_news"
+        android:textColor="@color/color_2"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/news1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/small_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:text="@string/game"
+            android:textColor="@color/color_5"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/small_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/small_category"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="16sp"
+            android:layout_toStartOf="@id/news_image"
+            android:maxLines="3"
+            android:text="@string/widget_news_title_1"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/news_image"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/small_category"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_holder_widget_1" />
+
+        <TextView
+            android:id="@+id/small_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/small_title"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp"
+            android:text="@string/minutes_ago"
+            android:textColor="@color/color_5" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/news_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/small_category2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:text="@string/sectorel"
+            android:textColor="@color/color_5"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/small_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/small_category2"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="16sp"
+            android:layout_toStartOf="@id/news_image2"
+            android:maxLines="3"
+            android:text="@string/widget_news_title_2"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/news_image2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/small_category2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_holder_widget_2" />
+
+        <TextView
+            android:id="@+id/small_time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/small_title2"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp"
+            android:text="@string/two_hours_ago"
+            android:textColor="@color/color_5" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/news_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/small_category3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:text="@string/life"
+            android:textColor="@color/color_5"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/small_title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/small_category3"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="16sp"
+            android:layout_toStartOf="@id/news_image3"
+            android:maxLines="3"
+            android:text="@string/widget_news_title_3"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/news_image3"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/small_category3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_holder_widget_3" />
+
+        <TextView
+            android:id="@+id/small_time3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/small_title3"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp"
+            android:text="@string/four_hours_Ago"
+            android:textColor="@color/color_5" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/news4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/small_category4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:text="@string/technology"
+            android:textColor="@color/color_5"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/small_title4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/small_category4"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="16sp"
+            android:layout_toStartOf="@id/news_image4"
+            android:maxLines="3"
+            android:text="@string/widget_news_title_4"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/news_image4"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/small_category4"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_holder_widget_4" />
+
+        <TextView
+            android:id="@+id/small_time_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/small_title4"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp"
+            android:text="@string/five_hours_ago"
+            android:textColor="@color/color_5" />
+    </RelativeLayout>
+
+</LinearLayout>

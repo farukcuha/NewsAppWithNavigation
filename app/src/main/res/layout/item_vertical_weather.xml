@@ -6,7 +6,7 @@
     <data>
         <variable
             name="dailyWeather"
-            type="com.pandorina.newsappwithnavigation.data.DailyWeather" />
+            type="com.pandorina.newsappwithnavigation.data.model.DailyWeather" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -19,6 +19,7 @@
             android:layout_marginStart="16dp"
             tools:text="Pazartesi"
             android:text="@{dailyWeather.day}"
+            android:fontFamily="@font/font_barlow_medium"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -46,6 +47,7 @@
             android:text="@{dailyWeather.degree}"
             android:textColor="@color/black"
             android:textSize="20sp"
+            android:fontFamily="@font/font_barlow_bold"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
