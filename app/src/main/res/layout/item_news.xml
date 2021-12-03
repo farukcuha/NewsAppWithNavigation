@@ -27,7 +27,7 @@
                 android:id="@+id/ivListNewsImage"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
-                android:scaleType="centerCrop"
+                android:scaleType="fitXY"
                 tools:src="@drawable/image_holder_news" />
 
             <TextView

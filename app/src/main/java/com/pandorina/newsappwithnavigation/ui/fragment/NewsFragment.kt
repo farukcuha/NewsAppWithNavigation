@@ -1,6 +1,7 @@
 package com.pandorina.newsappwithnavigation.ui.fragment
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
@@ -18,6 +19,7 @@ class NewsFragment : BaseFragment<FragmentNewsBinding>(FragmentNewsBinding::infl
         val mLayoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
         mLayoutManager.gapStrategy = StaggeredGridLayoutManager.GAP_HANDLING_MOVE_ITEMS_BETWEEN_SPANS
         binding.rvNews.layoutManager = mLayoutManager
+        binding.rvNews.itemAnimator = null
 
         arguments?.let {
             val id = it.getInt(PUBLISHER_ID)

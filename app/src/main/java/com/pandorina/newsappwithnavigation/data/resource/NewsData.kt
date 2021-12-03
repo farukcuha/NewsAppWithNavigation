@@ -157,15 +157,6 @@ object NewsData {
                     "Kongsberg'deki Jakobs Barajı'nda, YouTube kanalında yayınlamak üzere video çeken Eckhoff, donmuş zeminin üzerinde yürüyordu. Buzun kırılması sonucunda suya düşen fenomen isim hayatını kaybetti. Çevresindeki bir kişinin olayı bildirmesi üzerine bölgeye gelen dalgıçlar tarafından sudan cesedi çıkarılan Tor Eckhoff’un boğulduğu belirtildi."
         ),
         News(
-            13,
-            "https://imgrosetta.mynet.com.tr/file/13510067/7b2270726f63657373223a7b2274797065223a22666f637573222c22636f6f7264696e61746573223a7b2278223a222d302e3734222c2279223a222d302e3037227d7d7d/13510067-728xauto.png",
-            "Mynet",
-            R.id.menu_mynet,
-            "2 saat önce",
-            "Vücut modifikasyonlarıyla toplumun ikiyüzlülüğünü göstermek istedi! Parmağını kestirdi\n",
-            "Brezilya’da yaşayan 44 yaşındaki Michel Faro do Prado, toplumun ikiyüzlülüğünü göstermek için vücut modifikasyonlarına yöneldiğini ifade etti. Sıra dışı görünüme her gün bir yenisini ekleyen Prado, son olarak el parmaklarından birini kestiğini ve ağzına fazladan dişler eklettiğini dile getirdi. \n \n 44 yaşındaki Michel Faro do Prado, 25 yılı aşkın süredir dövme sanatçısı olarak çalışıyor. Bir vücut modifikasyonu hayranı olan Prado, benzersiz görünümü sayesinde “Şeytan İnsanı” lakabını kazandı ve sosyal medyada binlerce takipçiye ulaşan bir fenomene dönüştü. Görünümü için bir servet harcayan Prado, son uygulamasını takipçileriyle paylaştı."
-        ),
-        News(
             14,
             "https://imgrosetta.mynet.com.tr/file/13509882/13509882-728xauto.png",
             "Mynet",

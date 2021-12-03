@@ -26,8 +26,5 @@ class WeatherFragment : BaseFragment<FragmentWeatherBinding>(FragmentWeatherBind
             adapter = hourlyWeatherAdapter
             layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         }
-
-
     }
-
 }

@@ -31,12 +31,12 @@
             android:id="@+id/ivDailyWeatherImage"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginEnd="24dp"
-            tools:src="@drawable/rainy"
+            android:layout_marginEnd="72dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            tools:src="@drawable/rainy" />
 
         <TextView
             android:id="@+id/textView2"
